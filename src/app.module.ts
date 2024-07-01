@@ -12,6 +12,8 @@ import { Animation } from './animations/entities/animation.entity';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: true,
+      playground: true,
+      introspection: true,
     }),
     AnimationsModule,
     ConfigModule.forRoot({
