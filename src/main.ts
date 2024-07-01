@@ -3,6 +3,7 @@ import { AppModule } from './app.module';
 import { WinstonModule } from 'nest-winston';
 import { transports, format } from 'winston';
 import { graphqlUploadExpress } from 'graphql-upload';
+import { ConfigService } from '@nestjs/config';
 
 async function bootstrap() {
   const logger = WinstonModule.createLogger({
@@ -19,6 +20,7 @@ async function bootstrap() {
       }),
     ],
   });
+
   const app = await NestFactory.create(AppModule, { logger });
   app.enableCors({
     origin: '*', // Allow access from any origin
@@ -27,6 +29,12 @@ async function bootstrap() {
       'Content-Type, Accept, Authorization, apollo-require-preflight',
   });
   app.use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }));
-  await app.listen(3000);
+
+  const configService = app.get(ConfigService);
+  const port = configService.get<number>('PORT'); // Use the PORT environment variable or default to 3000
+
+  await app.listen(port);
+  logger.log(`Application is running on: ${await app.getUrl()}`);
 }
+
 bootstrap();
