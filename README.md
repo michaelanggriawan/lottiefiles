@@ -1,35 +1,37 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+### Backend Development Tech Stack
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+1. [NestJS](https://nestjs.com/)
+2. [TypeORM](https://typeorm.io/)
+3. [Typescript](https://www.framer.com/motion/)
+4. [Apollo GraphQL](https://www.apollographql.com/docs/)
+5. [GraphQL](https://graphql.org/)
+6. [PostgreSQL](https://www.postgresql.org/)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Why NestJS?
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Structured and Scalable Architecture
+NestJS provides a highly structured and scalable architecture by default. It uses TypeScript and encourages the use of decorators and dependency injection, which helps in building modular and maintainable code. The framework is built with scalability in mind, making it suitable for enterprise-level applications.
+
+### Built-in Support for GraphQL
+NestJS has built-in support for GraphQL through its dedicated package `@nestjs/graphql`. This integration is seamless and allows for easy setup and management of GraphQL APIs. The tight integration with Apollo GraphQL ensures that developers can take full advantage of GraphQL's features with minimal configuration.
+
+### TypeScript First Approach
+NestJS is built with TypeScript, which brings type safety and better tooling to the development process. TypeScript helps in catching errors at compile time and makes the code more readable and maintainable. This is a significant advantage over frameworks like Express, which primarily use JavaScript.
+
+### Dependency Injection
+NestJS uses dependency injection as a core principle, which helps in managing dependencies and enhancing code modularity and testability. This feature is not inherently available in vanilla Node.js or even in other frameworks like Express or Fastify without additional libraries.
+
+### Extensive Documentation and Community Support
+NestJS has extensive documentation and a growing community, which makes it easier for developers to find resources and get help when needed. The framework's documentation is well-organized and provides detailed information on various aspects of the framework.
+
+### Robust Ecosystem
+NestJS has a robust ecosystem with a wide range of modules that cover various functionalities such as microservices, WebSockets, and more. This ecosystem helps in building complex applications without having to rely heavily on third-party libraries.
 
 ## Installation
 
 ```bash
-$ yarn install
+$ yarn
 ```
 
 ## Running the app
@@ -45,29 +47,6 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-## Test
+## Access The GraphQL Playgorund
+[GraphQL Playground](http://localhost:3000/graphql)
 
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
